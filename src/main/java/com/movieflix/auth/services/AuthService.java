@@ -1,17 +1,19 @@
 package com.movieflix.auth.services;
 
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
 import com.movieflix.auth.entities.User;
 import com.movieflix.auth.entities.UserRole;
 import com.movieflix.auth.repositories.UserRepository;
 import com.movieflix.auth.utils.AuthResponse;
 import com.movieflix.auth.utils.LoginRequest;
 import com.movieflix.auth.utils.RegisterRequest;
+
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor

@@ -27,7 +27,10 @@ spring:
             enable: true
 
 project:
-  poster: posters/
+  poster: src/main/resources/static/posters/
 
 base:
   url: "http://localhost:8080"
+
+server:
+  port: 8081  
